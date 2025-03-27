@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laptop & Desktop Service Provider</title>
+  <!-- Bootstrap CSS for responsive layout (optional) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    header nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .section-title {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Laptop & Desktop Service Provider</h1>
+      <p>Reliable Repairs, Upgrades & Maintenance</p>
+      <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#booking">Book a Service</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Us Section -->
+  <section id="about" class="container my-5">
+    <h2 class="section-title">About Us</h2>
+    <p>We are a dedicated service provider offering repair, upgrade, and maintenance services for laptops and desktops. Our experienced team ensures that your devices perform at their best.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="container my-5">
+    <h2 class="section-title">Our Services</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Laptop Services</h3>
+        <ul>
+          <li>Screen Replacement</li>
+          <li>Battery & Charging Issues</li>
+          <li>Keyboard Repair</li>
+          <li>Overheating & Cooling Solutions</li>
+          <li>Motherboard Repair</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3>Desktop Services</h3>
+        <ul>
+          <li>Power Supply Repair</li>
+          <li>RAM & Storage Upgrade</li>
+          <li>Graphics Card Installation</li>
+          <li>Data Recovery</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Plans Section -->
+  <section id="pricing" class="container my-5">
+    <h2 class="section-title">Pricing & Plans</h2>
+    <p>Our competitive pricing offers options for both one-time repairs and annual maintenance contracts (AMC) for businesses.</p>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Laptop Screen Replacement/Bassed on the Model</td>
+          <td>6000</td>
+        </tr>
+        <tr>
+          <td>Desktop RAM Upgrade</td>
+          <td>1500</td>
+        </tr>
+        <tr>
+          <td>Data Recovery</td>
+          <td>350</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="container my-5">
+    <h2 class="section-title">Book a Service</h2>
+    <form id="bookingForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="service" class="form-label">Select Service</label>
+        <select class="form-select" id="service">
+          <option>Laptop Repair</option>
+          <option>Desktop Upgrade</option>
+          <option>Data Recovery</option>
+          <option>Software Installation</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="details" class="form-label">Additional Details</label>
+        <textarea class="form-control" id="details" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Request</button>
+    </form>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="container my-5">
+    <h2 class="section-title">Blog / Tips & Tricks</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Maintenance Tips for Laptops</h4>
+        <p>Learn how to keep your laptop running smoothly with regular maintenance.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Upgrading Your Desktop</h4>
+        <p>Explore the benefits of upgrading your desktop's hardware components.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Data Recovery Solutions</h4>
+        <p>Discover best practices for recovering lost data.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container my-5">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Have any questions? Reach out to us via phone or email.</p>
+    <form id="contactForm">
+      <div class="mb-3">
+        <label for="contactName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="contactName" required>
+      </div>
+      <div class="mb-3">
+        <label for="contactEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="contactEmail" required>
+      </div>
+      <div class="mb-3">
+        <label for="contactMessage" class="form-label">Message</label>
+        <textarea class="form-control" id="contactMessage" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Laptop & Desktop Service Provider. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Example: Show a thank-you alert when a form is submitted
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Thank you! Your service request has been submitted Will reach out Soon.");
+      // Optionally, add code here to send form data via AJAX
+      this.reset();
+    });
+    
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Thank you! Your message has been sent.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
